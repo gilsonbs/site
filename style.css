@@ -8,6 +8,32 @@ body {
     text-align: center;
 }
 
+/* Estilo da seção de carregamento */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #4B0082;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #9400D3;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 header {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -31,22 +57,36 @@ section {
     padding: 10px;
 }
 
-.about, .experience, .education, .skills {
+.about, .skills {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Estilos das barras de progresso */
+.skill {
+    margin: 20px 0;
 }
 
-li {
-    margin: 10px 0;
-    font-size: 1.1rem;
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
 }
 
+.progress {
+    background-color: #9400D3;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo do rodapé */
 footer {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.3);
