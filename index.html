@@ -5,47 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Currículo - Gilson Barreto da Silva</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Gilson Barreto da Silva</h1>
-        <h2>Engenheiro de Software | IA & Machine Learning</h2>
-    </header>
+    <!-- Seção de carregamento -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <p>Carregando...</p>
+    </div>
 
-    <section class="about">
-        <h3>Sobre Mim</h3>
-        <p>Sou graduado em Engenharia de Software e estou cursando pós-graduação em IA + Machine Learning e Data Science. Tenho experiência em desenvolvimento de sistemas, QA, e estou interessado em continuar a expandir meus conhecimentos em Inteligência Artificial e Engenharia de Software.</p>
-    </section>
+    <div id="content" style="display: none;">
+        <header>
+            <h1>Gilson Barreto da Silva</h1>
+            <h2>Engenheiro de Software | IA & Machine Learning</h2>
+        </header>
 
-    <section class="experience">
-        <h3>Experiência Profissional</h3>
-        <ul>
-            <li>Desenvolvedor de Sistemas – Empresa X (2022 - Presente)</li>
-            <li>QA Tester – Empresa Y (2021 - 2022)</li>
-        </ul>
-    </section>
+        <section class="about">
+            <h3>Sobre Mim</h3>
+            <p>Sou graduado em Engenharia de Software e estou cursando pós-graduação em IA + Machine Learning e Data Science. Tenho experiência em desenvolvimento de sistemas, QA, e estou interessado em continuar a expandir meus conhecimentos em Inteligência Artificial e Engenharia de Software.</p>
+        </section>
 
-    <section class="education">
-        <h3>Formação Acadêmica</h3>
-        <ul>
-            <li>Pós-Graduação em IA + Machine Learning – Faculdade Vincit (Previsão de Formação em 01/2025)</li>
-            <li>Graduação em Engenharia de Software – (2024)</li>
-        </ul>
-    </section>
+        <section class="skills">
+            <h3>Competências</h3>
+            <div class="skill">
+                <h4>Desenvolvimento Full Stack</h4>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h4>Inteligência Artificial & Machine Learning</h4>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h4>QA & Testes de Software</h4>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%">90%</div>
+                </div>
+            </div>
+        </section>
 
-    <section class="skills">
-        <h3>Competências</h3>
-        <ul>
-            <li>Desenvolvimento Full Stack</li>
-            <li>Inteligência Artificial & Machine Learning</li>
-            <li>QA & Testes de Software</li>
-            <li>Desenvolvedor Python</li>
-        </ul>
-    </section>
+        <footer>
+            <p>Contato: gilson.barreto2009@gmail.com</p>
+        </footer>
+    </div>
 
-    <footer>
-        <p>Contato: gilson.barreto2009@gmail.com</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
